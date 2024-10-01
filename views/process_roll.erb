@@ -1,0 +1,6 @@
+<h1><%= #{@num_dice}%>d<%= #{@num_sides}%></h1>
+<ol>
+  <% outcomes.each do |outcome|%>
+    <li><em>Result:</em> <strong><%= #{outcome} %></strong></li>
+  <% end %>
+</ol>
