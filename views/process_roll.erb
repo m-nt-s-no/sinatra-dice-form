@@ -1,6 +1,7 @@
-<h1><%= #{@num_dice}%>d<%= #{@num_sides}%></h1>
+<h1><%= "#{@num_dice}"%>d<%= "#{@num_sides}"%></h1>
+<p><a href="/process_roll">Roll again</a> | <a href="/">Go back home</a></p>
 <ol>
-  <% outcomes.each do |outcome|%>
-    <li><em>Result:</em> <strong><%= #{outcome} %></strong></li>
+  <% @outcomes.each do |outcome|%>
+    <li><em>Result:</em> <strong><%= "#{outcome}" %></strong></li>
   <% end %>
 </ol>
